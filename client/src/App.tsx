@@ -36,7 +36,7 @@ function Router() {
   useEffect(() => {
     const readAuth = () => {
       try {
-        const stored = window.localStorage.getItem("iolaire-site-auth");
+        const stored = window.localStorage.getItem("artino-site-auth");
         setIsSiteAuthenticated(stored === "logged-in");
       } catch {
         setIsSiteAuthenticated(false);
@@ -44,10 +44,10 @@ function Router() {
     };
 
     readAuth();
-    window.addEventListener("iolaire-site-auth-changed", readAuth);
+    window.addEventListener("artino-site-auth-changed", readAuth);
 
     return () => {
-      window.removeEventListener("iolaire-site-auth-changed", readAuth);
+      window.removeEventListener("artino-site-auth-changed", readAuth);
     };
   }, []);
 

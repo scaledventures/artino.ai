@@ -8,7 +8,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import logoNew from "@assets/iolaire-logo.png";
+import logoNew from "@assets/artino-logo-transparent.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -112,7 +112,7 @@ export function Navbar() {
           <a className="flex items-center gap-2 group">
             <img
               src={logoNew}
-              alt="IOLAIRE.AI"
+              alt="ARTINO.AI"
               className="h-10 w-auto object-contain"
             />
           </a>

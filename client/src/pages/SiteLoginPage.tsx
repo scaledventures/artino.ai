@@ -1,9 +1,9 @@
 import { FormEvent, useState } from "react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import logoNew from "@assets/iolaire-logo.png";
+import logoNew from "@assets/artino-logo-transparent.png";
 
-const STATIC_ID = "iolaire.ai";
+const STATIC_ID = "artino.ai";
 const STATIC_PASSWORD = "scaledventures";
 
 export default function SiteLoginPage() {
@@ -17,8 +17,8 @@ export default function SiteLoginPage() {
 
     if (userId === STATIC_ID && password === STATIC_PASSWORD) {
       try {
-        window.localStorage.setItem("iolaire-site-auth", "logged-in");
-        window.dispatchEvent(new Event("iolaire-site-auth-changed"));
+        window.localStorage.setItem("artino-site-auth", "logged-in");
+        window.dispatchEvent(new Event("artino-site-auth-changed"));
       } catch {
         // ignore storage errors
       }
@@ -37,7 +37,7 @@ export default function SiteLoginPage() {
               <div className="flex justify-center mb-4">
                 <img
                   src={logoNew}
-                  alt="Iolaire"
+                  alt="artino.ai"
                   className="h-10 w-auto"
                 />
               </div>
@@ -61,7 +61,7 @@ export default function SiteLoginPage() {
                     name="siteUserId"
                     type="text"
                     className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm md:text-base outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:border-primary transition-shadow"
-                    placeholder="iolaire.ai"
+                    placeholder="artino.ai"
                     value={userId}
                     onChange={(e) => setUserId(e.target.value)}
                     required

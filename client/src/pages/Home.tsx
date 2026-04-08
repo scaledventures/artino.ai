@@ -169,7 +169,7 @@ export default function Home() {
               Vision AI <span className="text-gradient">Platform</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-              Powering Intelligent <span className="text-primary font-semibold">Retail</span> Engagement at the Edge
+              Powering Intelligent <span className="text-primary font-semibold">Retail Engagement</span> at the Edge
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/calendar">
@@ -191,7 +191,7 @@ export default function Home() {
             <div className="relative w-full h-full rounded-2xl overflow-hidden border border-border/60 shadow-2xl shadow-primary/10 lg:scale-[1.05] lg:origin-center">
               <img
                 src={heroPageImg}
-                alt="iolaire.ai Hero"
+                alt="artino.ai Hero"
                 className="w-full h-full object-cover"
               />
             </div>

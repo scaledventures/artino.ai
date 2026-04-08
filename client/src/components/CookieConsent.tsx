@@ -10,7 +10,7 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 
-const COOKIE_CONSENT_KEY = "iolaire-cookie-consent";
+const COOKIE_CONSENT_KEY = "artino-cookie-consent";
 
 type ConsentState = "accepted" | "declined" | "unset";
 

@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { FileText, Cookie, Settings } from "lucide-react";
-import logoNew from "@assets/iolaire-logo.png";
+import logoNew from "@assets/artino-logo-transparent.png";
 import pdfIcon from "@assets/pdf-icon.png";
 
 export function Footer() {
@@ -83,7 +83,7 @@ export function Footer() {
               <div className="h-10 w-auto rounded-md bg-card flex items-center justify-center px-2 py-1">
                 <img
                   src={logoNew}
-                  alt="iolaire.ai"
+                  alt="artino.ai"
                   className="h-8 w-auto object-contain"
                 />
               </div>
@@ -132,7 +132,7 @@ export function Footer() {
 
         {/* Row 3: Copyright + legal links */}
         <div className="py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm font-sans">
-          <p className="text-muted-foreground font-sans">© 2026 iolaire.ai</p>
+          <p className="text-muted-foreground font-sans">© 2026 artino.ai</p>
           <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-5 gap-y-2 text-primary font-sans">
             <div className="flex h-10 items-center gap-2 shrink-0">
               <Link href="/terms-of-service">

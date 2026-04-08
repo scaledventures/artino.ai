@@ -14,7 +14,7 @@ export default function TermsOfServicePage() {
             </h1>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               By accessing or using the Vision AI platform and its accompanying services, including
-              the Automatic License Plate Recognition (ALPR) technology, provided by IOLAIRE.AI
+              the Automatic License Plate Recognition (ALPR) technology, provided by ARTINO.AI
               (the &quot;Company&quot;), you agree to the following Terms and Conditions.
             </p>
           </header>

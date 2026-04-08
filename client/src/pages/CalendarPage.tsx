@@ -175,7 +175,7 @@ export default function CalendarPage() {
               Book an Appointment
             </h1>
             <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Schedule a personalized demo with our Vision AI experts and discover how iolaire.ai can transform your operations.
+              Schedule a personalized demo with our Vision AI experts and discover how artino.ai can transform your operations.
             </p>
           </div>
 

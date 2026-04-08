@@ -125,10 +125,10 @@ export default function PrivacyPolicyPage() {
                 have rights under applicable laws to access, correct, or delete personal data.
                 Requests can be submitted by email to{" "}
                 <a
-                  href="mailto:info@iolaire.ai"
+                  href="mailto:info@artino.ai"
                   className="text-primary hover:underline break-all"
                 >
-                  info@iolaire.ai
+                  info@artino.ai
                 </a>
                 .
               </p>

@@ -51,10 +51,10 @@ export default function PrivacySettingsPage() {
                 To exercise your privacy rights (such as access, correction, or deletion of
                 personal data), or to update applicable preferences, please contact our team at{" "}
                 <a
-                  href="mailto:info@iolaire.ai"
+                  href="mailto:info@artino.ai"
                   className="text-primary hover:underline break-all"
                 >
-                  info@iolaire.ai
+                  info@artino.ai
                 </a>
                 . Requests will be reviewed and handled in accordance with our Privacy Policy and
                 applicable law.

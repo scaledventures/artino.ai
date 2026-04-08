@@ -24,7 +24,7 @@ export default function CareersPage() {
               A place to grow, learn and connect.
             </h2>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Be part of iolaire.ai and work at the forefront of Vision AI, Edge Applications,
+              Be part of artino.ai and work at the forefront of Vision AI, Edge Applications,
               and other industry-shaping technologies that define the next generation of
               intelligent systems.
             </p>

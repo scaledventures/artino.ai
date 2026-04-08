@@ -20,7 +20,7 @@ export default function AboutUsPage() {
             </div>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Our leadership team brings 70+ years of combined experience in scaling
-              emerging technologies and businesses. iolaire.ai was founded to solve
+              emerging technologies and businesses. artino.ai was founded to solve
               a vexing problem in traffic safety enforcement – timely detection of
               critical alerts so law enforcement can act and ensure safer communities.
               We aim to leverage the power of Vision AI to become a leader in
@@ -102,7 +102,7 @@ export default function AboutUsPage() {
                 </div>
                 <div className="text-sm md:text-base text-muted-foreground leading-relaxed space-y-3">
                   <p>
-                    Kennedy Pereira is the Founder and Chief Executive Officer of iolaire.ai.
+                    Kennedy Pereira is the Founder and Chief Executive Officer of artino.ai.
                     Kennedy brings 25+ years of leadership experience across Silicon Valley,
                     Dallas and global technology markets. Over the course of his career, he
                     has launched and scaled startups from $0 to $10M, guided companies
@@ -110,10 +110,10 @@ export default function AboutUsPage() {
                     business unit to $1B+ in revenue.
                   </p>
                   <p>
-                    As Founder and CEO of iolaire.ai, Kennedy&apos;s experience, insight, and
+                    As Founder and CEO of artino.ai, Kennedy&apos;s experience, insight, and
                     network have led to rapidly operationalizing innovative Vision AI
                     platforms, building strong operating foundations, and successfully
-                    scaling iolaire.ai into a market defining disruptor.
+                    scaling artino.ai into a market defining disruptor.
                   </p>
                   <p>
                     Kennedy has held senior leadership roles across high growth and global
@@ -167,7 +167,7 @@ export default function AboutUsPage() {
                     security serving enterprise and government use cases across multiple
                     industries. Patrick applies his strategic insight, global network, and
                     execution discipline to build, scale, and ensure the long term success
-                    of iolaire.ai.
+                    of artino.ai.
                   </p>
                 </div>
               </article>

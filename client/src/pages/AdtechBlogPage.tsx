@@ -207,10 +207,10 @@ export default function AdtechBlogPage() {
               What are the most urgent business problems you are looking to solve using parking
               analytics? Write to us for industry insights at{" "}
               <a
-                href="mailto:info@iolaire.ai"
+                href="mailto:info@artino.ai"
                 className="text-primary hover:underline break-all"
               >
-                info@iolaire.ai
+                info@artino.ai
               </a>
               .
             </p>

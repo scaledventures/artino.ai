@@ -37,10 +37,10 @@ export default function GetInTouchPage() {
                 </p>
                 <p className="text-sm md:text-base text-muted-foreground">
                   <a
-                    href="mailto:info@iolaire.ai"
+                    href="mailto:info@artino.ai"
                     className="text-primary hover:underline break-all"
                   >
-                    info@iolaire.ai
+                    info@artino.ai
                   </a>
                 </p>
               </div>
@@ -57,10 +57,10 @@ export default function GetInTouchPage() {
                 </p>
                 <p className="text-sm md:text-base text-muted-foreground">
                   <a
-                    href="mailto:info@iolaire.ai"
+                    href="mailto:info@artino.ai"
                     className="text-primary hover:underline break-all"
                   >
-                    info@iolaire.ai
+                    info@artino.ai
                   </a>
                 </p>
               </div>
@@ -77,10 +77,10 @@ export default function GetInTouchPage() {
             </p>
             <p className="text-sm md:text-base text-muted-foreground">
               <a
-                href="mailto:info@iolaire.ai"
+                href="mailto:info@artino.ai"
                 className="text-primary hover:underline break-all"
               >
-                info@iolaire.ai
+                info@artino.ai
               </a>
             </p>
           </section>
