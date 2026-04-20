@@ -1,0 +1,10 @@
+# Single-page app (React + wouter): send index.html for routes with no static file.
+# Required for direct URLs and refresh on paths like /blog/adtech (Apache / Ionos shared hosting).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

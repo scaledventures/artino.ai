@@ -12,8 +12,17 @@ export function serveStatic(app: Express) {
 
   app.use(express.static(distPath));
 
-  // fall through to index.html if the file doesn't exist
-  app.use("/{*path}", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  // SPA fallback: client-side routes (e.g. /blog/adtech) have no real file — serve index.html.
+  // Express 5 path patterns like "/{*path}" are unreliable here; use an explicit GET/HEAD handler.
+  app.use((req, res, next) => {
+    if (req.method !== "GET" && req.method !== "HEAD") {
+      return next();
+    }
+    if (req.path.startsWith("/api")) {
+      return next();
+    }
+    res.sendFile(path.resolve(distPath, "index.html"), (err) => {
+      if (err) next(err);
+    });
   });
 }
