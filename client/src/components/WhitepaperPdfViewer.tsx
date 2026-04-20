@@ -66,7 +66,7 @@ export function WhitepaperPdfViewer({ file }: WhitepaperPdfViewerProps) {
         ref={containerRef}
         className="rounded-2xl border border-border bg-card overflow-hidden"
       >
-        <div className="max-h-[min(85vh,1200px)] overflow-y-auto overflow-x-hidden bg-muted/20">
+        <div className="max-h-[min(85dvh,1200px)] overflow-y-auto overflow-x-hidden bg-muted/20">
           <div className="flex flex-col items-center py-4 px-2 sm:px-4 gap-4">
             <Document
               file={file}

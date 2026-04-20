@@ -39,6 +39,12 @@
 }
 
 @layer base {
+  /* Prevent horizontal scroll from full-bleed decorations; keeps layouts stable on narrow viewports. */
+  html {
+    overflow-x: clip;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
   * {
     @apply border-border outline-ring/50;
   }

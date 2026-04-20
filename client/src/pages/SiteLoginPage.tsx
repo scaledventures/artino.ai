@@ -30,8 +30,8 @@ export default function SiteLoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden font-sans">
-      <main className="min-h-screen flex items-center justify-center px-4 md:px-6">
+    <div className="min-h-dvh bg-background text-foreground overflow-x-hidden font-sans">
+      <main className="min-h-dvh flex items-center justify-center px-4 md:px-6 pb-[max(1rem,env(safe-area-inset-bottom,0px))]">
           <div className="w-full max-w-md">
             <div className="rounded-3xl bg-card shadow-2xl border border-border px-6 py-8 md:px-8 md:py-9">
               <div className="flex justify-center mb-4">

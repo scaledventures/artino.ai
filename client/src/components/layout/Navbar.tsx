@@ -231,7 +231,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {useHamburgerNav && mobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border p-4 flex flex-col gap-4 animate-in slide-in-from-top-5 max-h-[calc(100dvh-5rem)] overflow-y-auto">
+        <div className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border p-4 pb-[max(1rem,env(safe-area-inset-bottom,0px))] flex flex-col gap-4 animate-in slide-in-from-top-5 max-h-[calc(100dvh-5rem)] overflow-y-auto">
           {navItems.map((item) => (
             <div key={item.name} className="flex flex-col gap-1.5">
               <span className="text-xs font-bold text-muted-foreground uppercase tracking-[0.18em] px-2">{item.name}</span>

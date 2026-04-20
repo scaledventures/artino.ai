@@ -116,9 +116,11 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
-        <Router />
-        <CookieConsent />
+        <div className="min-h-dvh overflow-x-clip">
+          <Toaster />
+          <Router />
+          <CookieConsent />
+        </div>
       </TooltipProvider>
     </QueryClientProvider>
   );

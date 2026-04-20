@@ -17,7 +17,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { VisionAIFeatureTracks } from "@/components/VisionAIFeatureTracks";
 
-import heroPageImg from "@assets/HeroPage2.png";
+import heroPageImg from "@assets/RetailHeroFinal.png";
 import retailHeroImg from "@assets/Retail_Homepage.png";
 import safetyTeamImg from "@assets/safety-enforcement-team.png";
 import seeResultsHighwayImg from "@assets/see-results-highway.png";
@@ -156,8 +156,8 @@ export default function Home() {
 
       {/* 1. HERO SECTION - fills first viewport */}
       <section className="relative min-h-svh flex flex-col justify-center pt-[calc(6rem+env(safe-area-inset-top,0px))] md:pt-[calc(7rem+env(safe-area-inset-top,0px))] pb-14 md:pb-20 overflow-hidden hero-pattern">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/15 rounded-full blur-[140px] -z-10 opacity-60" />
-        <div className="absolute top-1/4 right-0 w-[500px] h-[400px] bg-primary/10 rounded-full blur-[100px] -z-10 opacity-40" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[min(600px,80dvh)] bg-primary/15 rounded-full blur-[140px] -z-10 opacity-60 pointer-events-none" />
+        <div className="absolute top-1/4 right-0 w-[min(500px,90vw)] h-[min(400px,50dvh)] bg-primary/10 rounded-full blur-[100px] -z-10 opacity-40 pointer-events-none" />
         <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-[1fr_1.35fr] gap-10 lg:gap-12 items-center relative z-0 flex-1">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -165,7 +165,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="z-10"
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold leading-[1.1] mb-6 tracking-tight text-foreground">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-bold leading-[1.1] mb-6 tracking-tight text-foreground">
               Vision AI <span className="text-gradient">Platform</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
@@ -186,15 +186,17 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="relative w-full lg:max-w-none mx-auto aspect-[7.9/4.9]"
+            className="relative w-full min-w-0 lg:max-w-none"
           >
-            <div className="relative w-full h-full rounded-2xl overflow-hidden border border-border/60 shadow-2xl shadow-primary/10 lg:scale-[1.05] lg:origin-center">
-              <img
-                src={heroPageImg}
-                alt="artino.ai Hero"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <img
+              src={heroPageImg}
+              alt="artino.ai Hero"
+              width={1790}
+              height={895}
+              decoding="async"
+              fetchPriority="high"
+              className="block w-full max-w-full h-auto rounded-2xl"
+            />
           </motion.div>
         </div>
       </section>

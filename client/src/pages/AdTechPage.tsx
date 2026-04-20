@@ -189,7 +189,7 @@ export default function AdTechPage() {
         >
           {/* Background image */}
           <div
-            className="relative w-full max-h-[85vh] min-h-[320px] md:min-h-[400px] bg-cover bg-center bg-no-repeat"
+            className="relative w-full max-h-[85dvh] min-h-[320px] md:min-h-[400px] bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${adtechHeroImg})`, aspectRatio: "1920 / 810" }}
           />
 

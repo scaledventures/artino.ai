@@ -162,7 +162,7 @@ export default function CalendarPage() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden font-sans">
       <Navbar />
 
-      <main className="relative bg-background min-h-[calc(100vh-64px)]">
+      <main className="relative bg-background min-h-[calc(100dvh-4rem)]">
         {/* Background gradient */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/5 via-transparent to-success/5" />

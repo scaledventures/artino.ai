@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef, useState, type CSSProperties } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -57,21 +57,20 @@ export default function ClientLoginPage() {
           ref={(el) => {
             sectionRef.current = el;
           }}
-          className="relative min-h-[calc(100vh-80px-80px)] flex items-center justify-end px-4 md:px-8 bg-contain bg-center bg-no-repeat"
+          className="relative min-h-[calc(100dvh-10rem)] flex items-center justify-center md:justify-end px-4 md:px-8 bg-contain bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${clientLoginBg})` }}
         >
           {/* Soft white overlay so image is visible but subtle */}
           <div className="absolute inset-0 bg-white/20 pointer-events-none" />
 
-          {/* Login card: align card right edge with background image right edge (bg-contain + bg-center). */}
+          {/* Login card: on md+, align with background image right edge; on small screens, stack centered. */}
           <div
-            className="absolute z-10 w-full max-w-md"
-            style={{
-              // Move card slightly inside the background image's right edge.
-              right: bgLeftOffset + 16,
-              top: "50%",
-              transform: "translateY(-50%)",
-            }}
+            className="relative z-10 w-full max-w-md mx-auto py-10 md:py-0 md:absolute md:top-1/2 md:-translate-y-1/2 md:mx-0 md:right-[var(--login-card-right)]"
+            style={
+              {
+                "--login-card-right": `${bgLeftOffset + 16}px`,
+              } as CSSProperties
+            }
           >
             <div className="rounded-3xl bg-card/95 shadow-2xl border border-border/70 px-6 py-8 md:px-8 md:py-9">
               <div className="flex justify-center mb-4">

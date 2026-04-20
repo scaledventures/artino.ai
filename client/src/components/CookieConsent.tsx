@@ -89,7 +89,7 @@ export function CookieConsent() {
   if (consent !== "unset") {
     return (
       <Dialog open={settingsOpen} onOpenChange={setSettingsOpen}>
-        <DialogContent className="max-w-xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-xl max-h-[90dvh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Cookie Settings</DialogTitle>
             <DialogDescription className="mt-1">
@@ -260,7 +260,7 @@ export function CookieConsent() {
       </div>
 
       <Dialog open={settingsOpen} onOpenChange={setSettingsOpen}>
-        <DialogContent className="max-w-xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-xl max-h-[90dvh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Cookie Settings</DialogTitle>
             <DialogDescription className="mt-1">
